@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source .env)",
+      "Bash(psql:*)",
+      "Bash(pip3 install:*)",
+      "Bash(curl:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(fly deploy:*)",
+      "Bash(export PATH=\"/Users/chinmayavsarkar/.fly/bin:$PATH\")",
+      "Bash(flyctl logs:*)",
+      "Bash(flyctl deploy:*)",
+      "Bash(flyctl status:*)",
+      "Bash(flyctl secrets set:*)"
+    ]
+  }
+}
