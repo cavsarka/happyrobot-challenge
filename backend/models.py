@@ -13,6 +13,7 @@ class Load(Base):
     delivery_datetime = Column(TIMESTAMP, nullable=False)
     equipment_type = Column(String(50), nullable=False)
     loadboard_rate = Column(DECIMAL(10,2), nullable=False)
+    true_cost = Column(DECIMAL(10,2))
     notes = Column(String)
     weight = Column(Integer)
     commodity_type = Column(String(100))

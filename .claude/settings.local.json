@@ -13,7 +13,14 @@
       "Bash(flyctl logs:*)",
       "Bash(flyctl deploy:*)",
       "Bash(flyctl status:*)",
-      "Bash(flyctl secrets set:*)"
+      "Bash(flyctl secrets set:*)",
+      "Bash(npm create:*)",
+      "Bash(echo:*)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(node --version:*)",
+      "Bash(npm --version:*)",
+      "Bash(npm install:*)",
+      "Bash(npx vite build)"
     ]
   }
 }
