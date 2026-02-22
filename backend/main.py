@@ -27,7 +27,7 @@ app.add_middleware(
 )
 
 # Simple API key authentication
-API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("API_KEY", "")
 FMCSA_API_KEY = os.getenv("FMCSA_API_KEY", "")
 
 def verify_api_key(x_api_key: str = Header(None)):
@@ -303,9 +303,14 @@ def complete_call(request: dict, db: Session = Depends(get_db), _auth: bool = De
     if request.get("outcome") == "booked" and request.get("load_id"):
 
         load = db.query(Load).filter(Load.load_id == request.get("load_id")).first()
+        if not load:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid load_id for booked call: {request.get('load_id')}"
+            )
 
-        origin_lat, origin_lng = geocode_city(load.origin) if load else (None, None)
-        dest_lat, dest_lng = geocode_city(load.destination) if load else (None, None)
+        origin_lat, origin_lng = geocode_city(load.origin)
+        dest_lat, dest_lng = geocode_city(load.destination)
 
         booking = Booking(
             call_id=request.get("call_id") or backup_call_id,
@@ -314,8 +319,8 @@ def complete_call(request: dict, db: Session = Depends(get_db), _auth: bool = De
             agreed_rate=float(request.get("final_rate") or 0),
             loadboard_rate=float(request.get("loadboard_rate", 0)),
             negotiation_rounds=int(request.get("negotiation_rounds") or 0),
-            origin = load.origin if load else None,
-            destination = load.destination if load else None,
+            origin = load.origin,
+            destination = load.destination,
             origin_lat = origin_lat,
             origin_lng = origin_lng,
             destination_lat = dest_lat,
@@ -603,7 +608,9 @@ def dashboard_calls(
 def dashboard_loads_map(db: Session = Depends(get_db), _auth: bool = Depends(verify_api_key)):
     bookings = db.query(Booking).filter(
         Booking.origin_lat.isnot(None),
+        Booking.origin_lng.isnot(None),
         Booking.destination_lat.isnot(None),
+        Booking.destination_lng.isnot(None),
     ).all()
 
     return [

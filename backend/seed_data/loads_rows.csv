@@ -1,0 +1,73 @@
+id,load_id,origin,destination,pickup_datetime,delivery_datetime,equipment_type,loadboard_rate,notes,weight,commodity_type,num_of_pieces,miles,dimensions,status,created_at,true_cost
+1,L001,"Chicago, Illinois","Dallas, Texas",2026-02-20 08:00:00,2026-02-22 14:00:00,Dry Van,2500.00,Need to avoid toll roads,35000,Electronics,42,950,48x40x60 inches,booked,2026-02-18 22:11:17.511571,2950.00
+2,L002,"Atlanta, Georgia","Miami, Florida",2026-02-21 06:00:00,2026-02-22 18:00:00,Refrigerated,1800.00,"Temperature controlled, keep at 38°F",28000,Produce,120,650,48x40x48 inches,available,2026-02-18 22:11:17.51158,2124.00
+3,L003,"Los Angeles, California","Phoenix, Arizona",2026-02-19 10:00:00,2026-02-20 16:00:00,Flatbed,1200.00,"Oversized load, permits required",45000,Construction Equipment,1,375,96x102x144 inches,available,2026-02-18 22:11:17.511582,1416.00
+4,L004,"Seattle, Washington","Portland, Oregon",2026-02-20 14:00:00,2026-02-21 09:00:00,Dry Van,850.00,Easy local run,22000,Furniture,75,175,48x40x72 inches,booked,2026-02-18 22:11:17.511584,1003.00
+5,L005,"Denver, Colorado","Salt Lake City, Utah",2026-02-22 08:00:00,2026-02-23 17:00:00,Dry Van,1400.00,"Mountain route, chain laws may apply",32000,Retail Goods,200,525,48x40x54 inches,booked,2026-02-18 22:11:17.511585,1652.00
+6,L006,"Houston, Texas","New Orleans, Louisiana",2026-02-21 12:00:00,2026-02-22 20:00:00,Tanker,1900.00,Hazmat certified driver required,40000,Chemicals,1,350,N/A,booked,2026-02-18 22:11:17.511586,2242.00
+7,L007,"Boston, Massachusetts","New York, New York",2026-02-19 07:00:00,2026-02-19 18:00:00,Dry Van,950.00,"Same day delivery, time sensitive",18000,Medical Supplies,50,215,48x40x40 inches,booked,2026-02-18 22:11:17.511588,1121.00
+8,L008,"Memphis, Tennessee","St. Louis, Missouri",2026-02-23 11:00:00,2026-02-24 15:00:00,Refrigerated,1100.00,Keep frozen at 0°F,26000,Frozen Foods,90,285,48x40x48 inches,booked,2026-02-18 22:11:17.511589,1298.00
+9,L009,"Detroit, Michigan","Columbus, Ohio",2026-02-20 09:00:00,2026-02-21 12:00:00,Dry Van,750.00,"Auto parts, handle with care",20000,Auto Parts,150,205,48x40x36 inches,booked,2026-02-18 22:11:17.51159,885.00
+10,L010,"Minneapolis, Minnesota","Kansas City, Missouri",2026-02-24 06:00:00,2026-02-25 16:00:00,Dry Van,1600.00,Standard freight,35000,General Merchandise,180,465,48x40x60 inches,booked,2026-02-18 22:11:17.511591,1888.00
+11,L011,"San Diego, California","Las Vegas, Nevada",2026-02-21 09:00:00,2026-02-21 20:00:00,Dry Van,900.00,Retail replenishment,24000,Clothing,110,330,48x40x60 inches,booked,2026-02-18 22:11:17.511593,1062.00
+12,L012,"Charlotte, North Carolina","Jacksonville, Florida",2026-02-22 07:00:00,2026-02-23 14:00:00,Dry Van,1250.00,Dock appointment required,31000,Paper Goods,140,400,48x40x54 inches,booked,2026-02-18 22:11:17.511594,1475.00
+13,L013,"San Antonio, Texas","Oklahoma City, Oklahoma",2026-02-20 10:00:00,2026-02-21 18:00:00,Flatbed,1500.00,Straps required,42000,Steel Beams,12,410,120x48x48 inches,booked,2026-02-18 22:11:17.511595,1770.00
+14,L014,"Nashville, Tennessee","Birmingham, Alabama",2026-02-23 08:00:00,2026-02-23 17:00:00,Refrigerated,800.00,Keep at 36°F,22000,Dairy Products,85,195,48x40x48 inches,available,2026-02-18 22:11:17.511596,944.00
+15,L015,"Cleveland, Ohio","Pittsburgh, Pennsylvania",2026-02-19 13:00:00,2026-02-20 09:00:00,Dry Van,650.00,Short haul,17000,Packaged Foods,95,135,48x40x48 inches,booked,2026-02-18 22:11:17.511597,767.00
+16,L016,"Raleigh, North Carolina","Richmond, Virginia",2026-02-22 11:00:00,2026-02-23 10:00:00,Dry Van,700.00,Residential delivery,20000,Appliances,60,165,48x40x60 inches,booked,2026-02-18 22:11:17.511598,826.00
+17,L017,"Orlando, Florida","Tampa, Florida",2026-02-20 06:00:00,2026-02-20 14:00:00,Dry Van,500.00,Local shuttle,15000,Beverages,100,85,48x40x48 inches,booked,2026-02-18 22:11:17.5116,590.00
+18,L018,"Phoenix, Arizona","Albuquerque, New Mexico",2026-02-21 15:00:00,2026-02-22 22:00:00,Dry Van,1300.00,High desert route,34000,Consumer Goods,175,420,48x40x60 inches,booked,2026-02-18 22:11:17.511601,1534.00
+19,L019,"Indianapolis, Indiana","Louisville, Kentucky",2026-02-24 09:00:00,2026-02-24 18:00:00,Dry Van,600.00,Same-day delivery,21000,Electronics,70,115,48x40x48 inches,booked,2026-02-18 22:11:17.511602,708.00
+20,L020,"Kansas City, Kansas","Omaha, Nebraska",2026-02-23 07:00:00,2026-02-23 19:00:00,Dry Van,750.00,General freight,28000,Hardware Supplies,120,185,48x40x60 inches,booked,2026-02-18 22:11:17.511603,885.00
+21,L021,"Sacramento, California","Reno, Nevada",2026-02-21 08:00:00,2026-02-21 18:00:00,Flatbed,950.00,Tarps required,38000,Lumber,25,135,96x48x60 inches,available,2026-02-18 22:11:17.511604,1121.00
+22,L022,"Columbus, Ohio","Buffalo, New York",2026-02-22 10:00:00,2026-02-23 15:00:00,Refrigerated,1150.00,Keep at 34°F,26000,Meat Products,95,310,48x40x48 inches,available,2026-02-18 22:11:17.511606,1357.00
+23,L023,"Baltimore, Maryland","Philadelphia, Pennsylvania",2026-02-20 12:00:00,2026-02-20 21:00:00,Dry Van,650.00,Dock level only,19000,Office Supplies,80,100,48x40x48 inches,booked,2026-02-18 22:11:17.511607,767.00
+24,L024,"Milwaukee, Wisconsin","Chicago, Illinois",2026-02-19 05:00:00,2026-02-19 14:00:00,Dry Van,550.00,Early morning pickup,16000,Food Packaging,60,90,48x40x48 inches,available,2026-02-18 22:11:17.511608,649.00
+25,L025,"Boise, Idaho","Spokane, Washington",2026-02-22 06:00:00,2026-02-22 17:00:00,Dry Van,800.00,Mountain pass conditions possible,27000,Groceries,115,290,48x40x54 inches,booked,2026-02-18 22:11:17.511609,944.00
+26,L026,"El Paso, Texas","Dallas, Texas",2026-02-23 07:00:00,2026-02-24 20:00:00,Dry Van,1700.00,Long haul intrastate,36000,Consumer Electronics,200,635,48x40x60 inches,booked,2026-02-18 22:11:17.51161,2006.00
+27,L027,"Providence, Rhode Island","Hartford, Connecticut",2026-02-20 08:30:00,2026-02-20 15:30:00,Dry Van,500.00,Small regional delivery,14000,Pharmaceuticals,45,65,48x40x40 inches,booked,2026-02-18 22:11:17.511612,590.00
+28,L028,"Tulsa, Oklahoma","Little Rock, Arkansas",2026-02-21 09:00:00,2026-02-22 12:00:00,Dry Van,900.00,Standard freight,30000,Textiles,130,240,48x40x60 inches,booked,2026-02-18 22:11:17.511613,1062.00
+29,L029,"Anchorage, Alaska","Fairbanks, Alaska",2026-02-24 10:00:00,2026-02-25 19:00:00,Dry Van,2100.00,Weather conditions possible,33000,General Freight,100,360,48x40x60 inches,booked,2026-02-18 22:11:17.511614,2478.00
+30,L030,"Albany, New York","Newark, New Jersey",2026-02-22 07:00:00,2026-02-22 18:00:00,Dry Van,750.00,Port delivery,21000,Imported Goods,85,145,48x40x48 inches,booked,2026-02-18 22:11:17.511615,885.00
+31,L031,"Des Moines, Iowa","Sioux Falls, South Dakota",2026-02-23 08:00:00,2026-02-23 18:00:00,Dry Van,700.00,Agricultural supplies,25000,Farm Equipment Parts,95,190,48x40x54 inches,booked,2026-02-18 22:11:17.511616,826.00
+32,L032,"Baton Rouge, Louisiana","Mobile, Alabama",2026-02-21 11:00:00,2026-02-22 16:00:00,Tanker,1600.00,Non-haz liquid,39000,Industrial Oils,1,145,N/A,booked,2026-02-18 22:11:17.511617,1888.00
+33,L033,"Greensboro, North Carolina","Charleston, South Carolina",2026-02-20 09:00:00,2026-02-21 14:00:00,Dry Van,900.00,Port shipment,29000,Household Goods,150,210,48x40x60 inches,booked,2026-02-18 22:11:17.511619,1062.00
+34,L034,"Salt Lake City, Utah","Boise, Idaho",2026-02-24 07:00:00,2026-02-24 20:00:00,Dry Van,850.00,Mountain driving,27000,Groceries,120,340,48x40x54 inches,booked,2026-02-18 22:11:17.51162,1003.00
+35,L035,"Fresno, California","Los Angeles, California",2026-02-19 06:00:00,2026-02-19 16:00:00,Refrigerated,950.00,"Fresh produce, 34°F",24000,Vegetables,100,220,48x40x48 inches,available,2026-02-18 22:11:17.511621,1121.00
+36,L036,"Newark, New Jersey","Baltimore, Maryland",2026-02-23 10:00:00,2026-02-24 13:00:00,Dry Van,1000.00,Standard freight,32000,Consumer Products,160,190,48x40x60 inches,booked,2026-02-18 22:11:17.511622,1180.00
+37,L037,"Wichita, Kansas","Oklahoma City, Oklahoma",2026-02-20 07:00:00,2026-02-20 18:00:00,Flatbed,850.00,Construction materials,41000,Concrete Forms,30,160,96x48x48 inches,booked,2026-02-18 22:11:17.511623,1003.00
+38,L038,"Reno, Nevada","Salt Lake City, Utah",2026-02-22 09:00:00,2026-02-23 21:00:00,Dry Van,1250.00,Long desert haul,34000,Retail Inventory,170,520,48x40x60 inches,booked,2026-02-18 22:11:17.511624,1475.00
+39,L039,"Grand Rapids, Michigan","Indianapolis, Indiana",2026-02-24 08:00:00,2026-02-24 19:00:00,Dry Van,800.00,Furniture shipment,26000,Home Furnishings,140,290,48x40x72 inches,booked,2026-02-18 22:11:17.511625,944.00
+40,L040,"Lexington, Kentucky","Cincinnati, Ohio",2026-02-21 06:00:00,2026-02-21 15:00:00,Dry Van,600.00,Regional short haul,18000,Packaged Goods,85,85,48x40x48 inches,booked,2026-02-18 22:11:17.511626,708.00
+41,L041,"Chicago, Illinois","Denver, Colorado",2026-02-20 08:00:00,2026-02-22 16:00:00,Dry Van,2200.00,Standard freight,33000,General Merchandise,180,920,48x40x60 inches,booked,2026-02-18 22:11:17.511625,2596.00
+42,L042,"Dallas, Texas","Atlanta, Georgia",2026-02-21 07:00:00,2026-02-23 14:00:00,Dry Van,1950.00,No touch freight,29000,Consumer Goods,160,780,48x40x60 inches,available,,2301.00
+43,L043,"Miami, Florida","Charlotte, North Carolina",2026-02-22 06:00:00,2026-02-24 12:00:00,Refrigerated,2100.00,Keep at 36F,26000,Seafood,90,650,48x40x48 inches,available,,2478.00
+44,L044,"Seattle, Washington","San Francisco, California",2026-02-20 10:00:00,2026-02-22 18:00:00,Dry Van,1800.00,Dock appointment required,31000,Tech Equipment,140,810,48x40x60 inches,available,,2124.00
+45,L045,"Phoenix, Arizona","Dallas, Texas",2026-02-21 09:00:00,2026-02-23 20:00:00,Flatbed,2400.00,Tarps required,42000,Steel Coils,8,1070,96x48x60 inches,available,,2832.00
+46,L046,"Chicago, Illinois","Atlanta, Georgia",2026-02-23 08:00:00,2026-02-25 16:00:00,Dry Van,1750.00,Standard freight,28000,Retail Goods,200,720,48x40x54 inches,available,,2065.00
+47,L047,"Los Angeles, California","Seattle, Washington",2026-02-19 11:00:00,2026-02-21 19:00:00,Refrigerated,2300.00,Keep at 34F,24000,Fresh Produce,110,1140,48x40x48 inches,booked,,2714.00
+48,L048,"Houston, Texas","Chicago, Illinois",2026-02-22 07:00:00,2026-02-24 21:00:00,Dry Van,2600.00,Team driver preferred,36000,Industrial Parts,170,1090,48x40x60 inches,available,,3068.00
+49,L049,"Atlanta, Georgia","Dallas, Texas",2026-02-20 06:00:00,2026-02-22 14:00:00,Dry Van,1600.00,No touch,27000,Clothing,195,780,48x40x60 inches,available,,1888.00
+50,L050,"Denver, Colorado","Chicago, Illinois",2026-02-21 08:00:00,2026-02-23 18:00:00,Dry Van,2100.00,Mountain route,32000,Electronics,150,920,48x40x60 inches,available,,2478.00
+51,L051,"New York, New York","Chicago, Illinois",2026-02-22 09:00:00,2026-02-24 17:00:00,Dry Van,1900.00,Dock level only,30000,Apparel,185,790,48x40x54 inches,available,,2242.00
+52,L052,"Charlotte, North Carolina","Miami, Florida",2026-02-20 07:00:00,2026-02-22 15:00:00,Refrigerated,1700.00,Keep at 38F,23000,Dairy Products,95,650,48x40x48 inches,available,,2006.00
+53,L053,"Kansas City, Missouri","Dallas, Texas",2026-02-23 10:00:00,2026-02-25 18:00:00,Flatbed,1800.00,Straps required,40000,Lumber,20,490,120x48x48 inches,available,,2124.00
+54,L054,"San Francisco, California","Los Angeles, California",2026-02-19 06:00:00,2026-02-19 18:00:00,Dry Van,850.00,Same day,18000,Packaged Goods,100,380,48x40x48 inches,available,,1003.00
+55,L055,"Minneapolis, Minnesota","Chicago, Illinois",2026-02-21 07:00:00,2026-02-22 15:00:00,Dry Van,950.00,Standard freight,22000,Food Products,130,410,48x40x54 inches,available,,1121.00
+56,L056,"Dallas, Texas","Houston, Texas",2026-02-20 08:00:00,2026-02-20 18:00:00,Tanker,1100.00,Hazmat certified required,39000,Chemicals,1,240,N/A,available,,1298.00
+57,L057,"Chicago, Illinois","Minneapolis, Minnesota",2026-02-22 06:00:00,2026-02-23 14:00:00,Dry Van,1050.00,Standard freight,25000,Hardware,145,410,48x40x60 inches,available,,1239.00
+58,L058,"Atlanta, Georgia","Charlotte, North Carolina",2026-02-21 09:00:00,2026-02-22 17:00:00,Dry Van,750.00,Easy run,19000,Household Goods,110,245,48x40x48 inches,available,,885.00
+59,L059,"Portland, Oregon","Seattle, Washington",2026-02-20 07:00:00,2026-02-20 14:00:00,Refrigerated,600.00,Keep at 34F,16000,Vegetables,80,175,48x40x48 inches,available,,708.00
+60,L060,"Nashville, Tennessee","Chicago, Illinois",2026-02-23 08:00:00,2026-02-24 20:00:00,Dry Van,1400.00,Standard freight,28000,Auto Parts,160,470,48x40x60 inches,available,,1652.00
+61,L061,"Salt Lake City, Utah","Denver, Colorado",2026-02-22 09:00:00,2026-02-23 17:00:00,Dry Van,900.00,Mountain route,24000,Retail Inventory,135,370,48x40x54 inches,available,,1062.00
+62,L062,"Dallas, Texas","Phoenix, Arizona",2026-02-21 07:00:00,2026-02-23 15:00:00,Dry Van,2000.00,Standard freight,31000,Consumer Electronics,175,1070,48x40x60 inches,available,,2360.00
+63,L063,"Chicago, Illinois","Kansas City, Missouri",2026-02-20 08:00:00,2026-02-21 16:00:00,Dry Van,1100.00,No touch,26000,General Freight,155,500,48x40x60 inches,available,,1298.00
+64,L064,"Los Angeles, California","Denver, Colorado",2026-02-22 10:00:00,2026-02-24 20:00:00,Flatbed,2500.00,Permits required,44000,Construction Equipment,3,1020,96x102x144 inches,available,,2950.00
+65,L065,"Miami, Florida","Atlanta, Georgia",2026-02-19 06:00:00,2026-02-20 14:00:00,Dry Van,1300.00,Standard freight,27000,Imported Goods,165,660,48x40x60 inches,available,,1534.00
+66,L066,"Seattle, Washington","Portland, Oregon",2026-02-21 08:00:00,2026-02-21 16:00:00,Dry Van,550.00,Local run,15000,Groceries,90,175,48x40x48 inches,available,,649.00
+67,L067,"Houston, Texas","Dallas, Texas",2026-02-23 07:00:00,2026-02-23 15:00:00,Tanker,950.00,Non-haz liquid,38000,Industrial Oils,1,240,N/A,available,,1121.00
+68,L068,"Atlanta, Georgia","Nashville, Tennessee",2026-02-20 09:00:00,2026-02-21 13:00:00,Refrigerated,850.00,Keep at 36F,21000,Meat Products,85,250,48x40x48 inches,available,,1003.00
+69,L069,"Denver, Colorado","Salt Lake City, Utah",2026-02-22 08:00:00,2026-02-23 16:00:00,Dry Van,1300.00,Mountain driving,29000,Retail Goods,160,525,48x40x60 inches,available,,1534.00
+70,L070,"Chicago, Illinois","Detroit, Michigan",2026-02-21 07:00:00,2026-02-22 11:00:00,Dry Van,800.00,Standard freight,22000,Auto Parts,140,280,48x40x54 inches,available,,944.00
+71,L071,"Chicago, Illinois","Raleign, North Carolina",2026-02-22 08:00:00,2026-02-24 08:00:00,Dry Van,2000.00,Sports Equipment,30000,Retail Goods,50,800,48x40x60 inches,booked,2026-02-21 16:27:48,2800.00
+72,L072,"Chicago, IL","Tuscaloosa, AL",2026-02-22 06:00:03,2026-02-24 18:00:12,Basketball,1500.00,Standard freight,25000,Retail Goods,200,700,48x40x60 inches,available,,2200.00

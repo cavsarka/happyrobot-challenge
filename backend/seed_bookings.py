@@ -5,10 +5,10 @@ from pathlib import Path
 from typing import Optional
 
 from database import SessionLocal
-from models import Load
+from models import Booking
 
 
-DEFAULT_CSV_PATH = Path(__file__).resolve().parent / "seed_data" / "loads_rows.csv"
+DEFAULT_CSV_PATH = Path(__file__).resolve().parent / "seed_data" / "bookings_rows.csv"
 
 
 def _clean(value: Optional[str]) -> Optional[str]:
@@ -33,7 +33,7 @@ def _to_datetime(value: Optional[str]) -> Optional[datetime]:
     return datetime.fromisoformat(cleaned) if cleaned is not None else None
 
 
-def seed_loads(csv_path: Optional[Path] = None) -> int:
+def seed_bookings(csv_path: Optional[Path] = None) -> int:
     path = csv_path or DEFAULT_CSV_PATH
     db = SessionLocal()
 
@@ -44,29 +44,27 @@ def seed_loads(csv_path: Optional[Path] = None) -> int:
 
         inserted = 0
         for row in rows:
-            load = Load(
+            booking = Booking(
+                call_id=_clean(row.get("call_id")),
                 load_id=_clean(row.get("load_id")),
-                origin=_clean(row.get("origin")),
-                destination=_clean(row.get("destination")),
-                pickup_datetime=_to_datetime(row.get("pickup_datetime")),
-                delivery_datetime=_to_datetime(row.get("delivery_datetime")),
-                equipment_type=_clean(row.get("equipment_type")),
-                loadboard_rate=_to_decimal(row.get("loadboard_rate")),
-                true_cost=_to_decimal(row.get("true_cost")),
-                notes=_clean(row.get("notes")),
-                weight=_to_int(row.get("weight")),
-                commodity_type=_clean(row.get("commodity_type")),
-                num_of_pieces=_to_int(row.get("num_of_pieces")),
-                miles=_to_int(row.get("miles")),
-                dimensions=_clean(row.get("dimensions")),
-                status=_clean(row.get("status")) or "available",
+                mc_number=_clean(row.get("mc_number")) or "",
+                agreed_rate=_to_decimal(row.get("agreed_rate")) or Decimal("0"),
+                loadboard_rate=_to_decimal(row.get("loadboard_rate")) or Decimal("0"),
+                margin_percentage=_to_decimal(row.get("margin_percentage")),
+                negotiation_rounds=_to_int(row.get("negotiation_rounds")) or 0,
+                origin=_clean(row.get("origin")) or "",
+                destination=_clean(row.get("destination")) or "",
+                origin_lat=_to_decimal(row.get("origin_lat")),
+                origin_lng=_to_decimal(row.get("origin_lng")),
+                destination_lat=_to_decimal(row.get("destination_lat")),
+                destination_lng=_to_decimal(row.get("destination_lng")),
                 created_at=_to_datetime(row.get("created_at")),
             )
-            db.add(load)
+            db.add(booking)
             inserted += 1
 
         db.commit()
-        print(f"Seeded {inserted} loads from {path.name}")
+        print(f"Seeded {inserted} bookings from {path.name}")
         return inserted
     except Exception:
         db.rollback()
@@ -76,4 +74,4 @@ def seed_loads(csv_path: Optional[Path] = None) -> int:
 
 
 if __name__ == "__main__":
-    seed_loads()
+    seed_bookings()
