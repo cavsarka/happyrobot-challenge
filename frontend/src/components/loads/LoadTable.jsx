@@ -20,7 +20,7 @@ export default function LoadTable({ data }) {
       <table className="w-full">
         <thead>
           <tr className="border-b border-border text-left">
-            {['Load ID', 'Lane', 'Carrier', 'Loadboard Rate', 'Final Rate', 'Broker Revenue', 'Margin', 'Action'].map((h) => (
+            {['Load ID', 'Lane', 'Carrier', 'Loadboard Rate', 'Final Rate', 'Broker Revenue', 'Margin'].map((h) => (
               <th key={h} className="p-4 text-xs font-semibold text-muted uppercase tracking-wider whitespace-nowrap">
                 {h}
               </th>
@@ -59,15 +59,6 @@ export default function LoadTable({ data }) {
                     {load.margin_percentage.toFixed(1)}%
                   </span>
                 </div>
-              </td>
-              <td className="px-4">
-                {load.margin_percentage < 5 ? (
-                  <button className="px-3 py-1.5 bg-primary text-white text-xs font-semibold cursor-pointer">
-                    REVIEW
-                  </button>
-                ) : (
-                  <span className="text-xs text-muted">—</span>
-                )}
               </td>
             </tr>
           ))}
