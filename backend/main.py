@@ -7,8 +7,12 @@ from pathlib import Path
 from typing import Optional, List, Dict, Tuple
 from sqlalchemy.orm import Session
 from sqlalchemy import func, cast, Date, Integer, case
-from database import get_db
-from models import Load, Call, Booking
+try:
+    from .database import get_db
+    from .models import Load, Call, Booking
+except ImportError:
+    from database import get_db
+    from models import Load, Call, Booking
 from datetime import datetime
 import os
 import re

@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from database import engine
-from models import Base
-from seed_loads import seed_loads
-from seed_calls import seed_calls
-from seed_bookings import seed_bookings
+from backend.database import engine
+from backend.models import Base
+from backend.seed_loads import seed_loads
+from backend.seed_calls import seed_calls
+from backend.seed_bookings import seed_bookings
 
 
 SEED_DIR = Path(__file__).resolve().parent / "seed_data"

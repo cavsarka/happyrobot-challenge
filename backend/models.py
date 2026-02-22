@@ -1,6 +1,9 @@
 # models.py
 from sqlalchemy import Column, Integer, String, DECIMAL, TIMESTAMP, ForeignKey
-from database import Base
+try:
+    from .database import Base
+except ImportError:
+    from database import Base
 from datetime import datetime
 
 class Load(Base):
